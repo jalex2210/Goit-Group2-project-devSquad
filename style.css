@@ -1,15 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-li{
-    list-style: none;
-}
 
-.header__hero{
-    background-color: rgb(228, 144, 144);
-}
+
+
 .hero{
     display: flex;
     justify-content: space-between;
@@ -18,11 +9,7 @@ li{
 .hero__h1{
     display: block;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
+
 
 .nav{
     display: flex;

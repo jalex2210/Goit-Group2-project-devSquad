@@ -2,5 +2,49 @@
 @import "node_modules/modern-normalize/modern-normalize.css";
 @import "./utils/variables";
 @import "./utils/mixin";
-@import "./components/advantages", "./components/contacts", "./components/customer-reviews", "./components/header", "./components/hero";
-@import "./components/footer", "./components/gallery", "./components/how-its-made", "./components/products";
+@import "./components/advantages","./components/contacts","./components/customer-reviews","./components/header","./components/hero";
+@import "./components/footer","./components/gallery","./components/how-its-made","./components/products";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: $color-text-black;
+    background-color: $color-background-white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+@include screen-480 {
+    .container {
+        width: 100%;
+        padding: 24px 15px;
+    }
+}
+
+@include screen-768 {
+    .container {
+        width: 100%;
+        padding: 24px 15px;
+    }
+}
