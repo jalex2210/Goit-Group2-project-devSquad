@@ -1,17 +1,20 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
 
     &__hero {
-            background-color: rgb(228, 144, 144);
+            background-color: $color-background-pink;
         }
-
-    
-        .nav {
-            display: flex;
-            gap: 20px;
-        }
+    &__button{
+        display: flex;
+        gap: 15px;
+        padding: 15px;
+        border-radius: 25px;
+    }
+    .nav {
+        display: flex;
+        gap: 20px;
+    }
 }
 
 
