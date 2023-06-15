@@ -8,4 +8,28 @@
         }
 
     
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
 }
+
+
+
+/*#header__bg-circles1 {
+    background-color: rgba(42, 165, 46, 0.827);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    z-index: 1;
+    transform: translateX(200px) translateY(400px);
+
+    animation: move-circle1 2s infinite linear;
+
+}
+
+@keyframes move-circle1 {
+    to {
+        transform: translateX(250px) translateY(-30px);
+    }
+}*/
