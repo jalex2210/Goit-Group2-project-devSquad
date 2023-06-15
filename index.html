@@ -14,12 +14,12 @@
 <body>
 
     <!-- HEADER -->
-    <div class="container header__hero">
+    <div class="container header__header-hero">
         
         <header class="header">
         
-            <div class="header__logo">
-                <svg>
+            <div>
+                <svg class="header__logo">
                     <use href="./images/SVG/sprite.svg#logo"></use>
                 </svg>
                 
@@ -27,11 +27,21 @@
 
             <nav>
                 <ul class="nav">
-                    <li class="nav__link">Home</li>
-                    <li class="nav__link">Abaut us</li>
-                    <li class="nav__link">How it's made?</li>
-                    <li class="nav__link">Our products</li>
-                    <li class="nav__link">Contact</li>
+                    <li>
+                        <a class="nav__link" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#">Abaut us</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#made">How it's made?</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#products">Our products</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
 
@@ -40,7 +50,6 @@
             </button>
         
         </header>
-
 
     <!-- MAIN -->
     <main>
@@ -51,39 +60,41 @@
                 
                 <h1><span class="hero__h1">ICE CREAM</span>
                     <span class="hero__h1">MADE WITH</span>
-                    <span class="hero__h1 hero__h1-ed">PASSION</span>
+                    <span class="hero__h1 hero__h1-red">PASSION</span>
                 </h1>
 
                 <div>   
-                    <button class="button"></button>
-                    <button class="button"></button>
+                    <button class="hero__button hero__button-red">Products</button>
+                    <button class="hero__button">How it’s made?</button>
                 </div>
 
-                <div class="hero__text">
-                    <img src="" alt="">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eveniet, eum id impedit mollitia quos omnis tenetur temporibus sed asperiores perspiciatis alias autem quisquam dignissimos nobis eaque optio accusantium enim.</p>
-                        <svg>
-                            <use></use>
-                        </svg>
+                <div class="hero__jug-text">
+                    <img src="./images/jarra.png" alt="">
+                    <div class="hero__text">
+                        <p>Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!</p>
+                        <div class="hero__svg">
+                            <svg class="hero__icon-svg">
+                                <use href="./images/SVG/sprite.svg#right"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
               
             <div class="hero__column">
-                <img class="hero__img" src="" alt="">
+                <img class="hero__img" src="./images/helado.png" alt="">
             </div>
 
-            <div class="hero__column">
+            <div class="hero__little-column">
                 <div class="hero__number">
                     <p>16</p>
-                    <span class="hero__little-circle"></span>
                     <p>dsfsdfs</p>
+                    <div class="hero__little-circle"></div>
                 </div>
                 <div class="hero__number">
                     <p>23</p>
-                    <span class="hero__little-circle"></span>
                     <p>dsfsdfs</p>
+                    <div class="hero__little-circle"></div>
                 </div>
                 <img src="" alt="">
             </div>

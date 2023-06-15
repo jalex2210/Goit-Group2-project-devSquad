@@ -1,20 +1,44 @@
 .header {
     display: flex;
     justify-content: space-between;
-
-    &__hero {
+    padding: 37px 16px;
+    &__logo{
+        width: 199px;
+        height: 50px;
+    }
+    &__header-hero {
             background-color: $color-background-pink;
         }
     &__button{
         display: flex;
         gap: 15px;
-        padding: 15px;
+        padding: 3px 17px;
+        height: 44px;
         border-radius: 25px;
+        color: $color-text-red;
+        align-items: center;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        line-height: 21px;
+    }
+    &__buttom:hover{
+        background-color: $color-text-gray;
     }
     .nav {
         display: flex;
         gap: 20px;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        line-height: 21px;
+        padding-top: 15px;
     }
+    .nav__link{
+        color: $color-white;
+    }
+    .nav__link:hover{
+        color: $color-text-red;
+    }
+    
 }
 
 
