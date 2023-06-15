@@ -22,16 +22,6 @@
         z-index: 2;
     }
     
-    &__circle {
-        background-color:#FFA5BA;
-        position: absolute;
-        width: 534px;
-        height: 534px;
-        border-radius: 50%;
-        left: 44%;
-        bottom: 12%;
-        z-index: 1;
-    }
     
     &__little-circle {
         background-color: #fff;
@@ -58,10 +48,10 @@
         background-color: $color-text-red;
         color: $color-white;
     }
-     &__button-red:hover{
+    &__button-red:hover{
         background-color: $color-button-hover;
     }
-
+    
     &__jug-text{
         display: flex;
         margin-top: 40px;
@@ -89,5 +79,15 @@
     }
     &__img{
         margin-left: 10%;
+    }
+    &__circle {
+        background-color:#FFA5BA;
+        position: absolute;
+        width: 534px;
+        height: 534px;
+        border-radius: 50%;
+        left: 44%;
+        bottom: 52%;
+        z-index: 1;
     }
 }
