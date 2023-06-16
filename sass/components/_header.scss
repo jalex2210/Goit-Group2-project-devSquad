@@ -22,8 +22,9 @@
         font-weight: 700;
         line-height: 21px;
     }
-    &__buttom:hover{
-        background-color: $color-text-gray;
+    &__button:hover{
+        background-color: #ECEBEB;
+        transform: translateY(-5px);
     }
     .nav {
         display: flex;
@@ -35,6 +36,8 @@
     }
     .nav__link{
         color: $color-white;
+        position: relative;
+        z-index: 4;
     }
     .nav__link:hover{
         color: $color-text-red;

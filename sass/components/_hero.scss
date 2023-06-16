@@ -22,15 +22,6 @@
         z-index: 2;
     }
     
-    
-    &__little-circle {
-        background-color: #fff;
-        position: absolute;
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        right: 3%;
-    }
     &__button{
         border-radius: 20px;
         padding: 11px 22px;
@@ -43,6 +34,7 @@
     }
     &__button:hover{
         background-color: #ECEBEB;
+        transform: translateY(-5px);
     }
     &__button-red{
         background-color: $color-text-red;
@@ -78,7 +70,7 @@
         fill: $color-text-red;
     }
     &__img{
-        margin-left: 10%;
+        margin-left: 45%;
     }
     &__circle {
         background-color:#FFA5BA;
@@ -87,7 +79,47 @@
         height: 534px;
         border-radius: 50%;
         left: 44%;
-        bottom: 52%;
+        top: 54px;
         z-index: 1;
+    }
+    
+    &__img-women{
+        position: relative;
+        margin-top: 95px;
+        z-index: 10;
+    }
+    &__numbers{
+        margin-left: 194px;
+        width: 92px;
+        margin-top: 38px;
+        text-align: right;
+        position: relative;
+    }
+    &__number{
+        font-family: 'Titan One';
+        font-size: 46px;
+        line-height: 53px;
+        letter-spacing: 0.04em;
+        color: $color-text-red;
+        position: relative;
+        z-index: 1;
+    }
+    &__sales{
+        font-family: 'DM Sans';
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: $color-white;
+        margin-top: 2px;
+    }
+
+    &__little-circle {
+        background-color: #fff;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        position: absolute;
+        top: -12px;
+        right: -20px;
     }
 }
