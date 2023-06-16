@@ -124,3 +124,8 @@ height: 134px;
 margin: 0px auto;
 text-align: center;
 }
+.products__description{
+    display: block;
+   text-align: center;
+   padding-top: 32px;
+}
