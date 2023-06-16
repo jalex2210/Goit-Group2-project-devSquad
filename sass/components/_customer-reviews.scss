@@ -1,0 +1,62 @@
+.customer {
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    &__image {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__text {
+      background-color: $color-background-gray;
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      margin: auto;
+      padding: 51px 138px 38px;
+      position: relative;
+      text-align: center;
+      width: 968px;
+    }
+
+     &__text::after {
+        justify-content: center;
+         border: 1px solid #E1E1E1;
+         content: "";
+         left: 82px;
+         top: 76px;
+         position: absolute;
+         width: 821px;
+     }
+
+     &__text::before{
+        justify-content: center;
+         border: 1px solid #E1E1E1;
+         content: "";
+         left: 82px;
+         top: 106px;
+         position: absolute;
+         width: 821px;
+     }
+
+     &__quotes {
+        position:absolute;
+        left: 82px;
+        top: 32px;
+     }
+
+    &__geoname {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 37px;
+      text-align: center;
+    }
+  
+}
