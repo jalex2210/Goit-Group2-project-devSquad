@@ -1,11 +1,17 @@
 .header {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     padding: 37px 16px;
+    width: 1200px;
     z-index: 3;
     &__logo{
         width: 199px;
         height: 50px;
+    }
+    &__icon-menu {
+        width: 20px;
+        height: 12px;
     }
     &__header-hero {
             background-color: $color-background-pink;
@@ -21,6 +27,8 @@
         font-family: 'DM Sans';
         font-weight: 700;
         line-height: 21px;
+        position: relative;
+        z-index: 5;
     }
     &__button:hover{
         background-color: #ECEBEB;
@@ -44,8 +52,21 @@
     }
     
 }
+.header-container{
+    width: 1280px;
+}
 
+@include screen-1200 {
+    .menu-toggle {
+        display: none;
+    }
+}
 
+@include screen-768{
+    .nav{
+        display: none;
+    }
+}
 
 /*#header__bg-circles1 {
     background-color: rgba(42, 165, 46, 0.827);

@@ -1,20 +1,29 @@
 @include screen-480{
-
-    .nav,
-    .header__contact{
+    .container{
+        min-width: 320px;
+    }
+    .header{
+        min-width: 320px;
+    }
+    nav{
+        display: none;
+    }
+    .header__button{
         display: none;
     }
 
-    .heade__icon-menu {
-        width: 20px;
-        height: 12px;
+    .header__icon-menu {
+        width: 24px;
+        height: 24px;
     }
-    
+
     .menu-toggle {
-        background-color: red;
+        background-color: transparent;
         cursor: pointer;
+        border: none;
+        border-radius: 50%;
     }
-    
+
     .menu-toggle:hover,
     .menu-toggle:focus {
         background-color: $color-button-hover;
@@ -23,11 +32,11 @@
     .menu-container {
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         width: 100vw;
         height: 100vh;
         padding: 40px;
-        
+        background-color: #E17992;
         z-index: 999;
         overflow-y: auto;
         transform: translateX(100%);
@@ -55,7 +64,6 @@
         font-weight: 500;
         font-size: 2.85em;
         line-height: 1.175;
-        color: $color-title;
         letter-spacing: 0.02em;
         display: block;
         margin-bottom: 32px;
@@ -65,50 +73,12 @@
     .mobile-menu__link:focus,
     .mobile-menu__link:hover {
         color: #2196f3;
-    }
-    
-    .mobile__contact {
-        list-style: none;
-        margin: 306px 0 64px;
-        padding: 0;
-    }
-    
-    .mobile__link-phone {
-        display: flex;
-        font-weight: 500;
-        font-size: 2.42em;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        color: #2196F3;
-        margin-bottom: 32px;
-    }
-    
-    .mobile__link-email {
-        font-weight: 500;
-        font-size: 1.71em;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        color: #757575;
-    }
-    
-    .mobile__socialMedia {
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
-        padding: 0;
-    }
-    .mobile__socialMedia-link {
-        font-weight: 500;
-        font-size: 1.28em;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2196F3;
-    }
+    } 
 }
 
 @include screen-768{
     .menu-container{
-        display: none;
+        transform: translateX(30%);
     }
 }
 
@@ -116,4 +86,5 @@
     .menu-container {
         display: none;
     }
+    
 }
