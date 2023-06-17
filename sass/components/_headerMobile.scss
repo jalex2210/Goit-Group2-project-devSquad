@@ -1,0 +1,119 @@
+@include screen-480{
+
+    .nav,
+    .header__contact{
+        display: none;
+    }
+
+    .heade__icon-menu {
+        width: 20px;
+        height: 12px;
+    }
+    
+    .menu-toggle {
+        background-color: red;
+        cursor: pointer;
+    }
+    
+    .menu-toggle:hover,
+    .menu-toggle:focus {
+        background-color: $color-button-hover;
+    }
+    
+    .menu-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 40px;
+        
+        z-index: 999;
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+    }
+    
+    .menu-container.is-open {
+        transform: translateX(0);
+    }
+    
+    .menu-container .menu-toggle {
+        position: absolute;
+        top: 21px;
+        right: 25px;
+        fill: orange;
+    }
+    
+    .mobile-menu {
+        padding: 0;
+        margin-top: 8px;
+        list-style: none;
+    }
+    
+    .mobile-menu__link {
+        font-weight: 500;
+        font-size: 2.85em;
+        line-height: 1.175;
+        color: $color-title;
+        letter-spacing: 0.02em;
+        display: block;
+        margin-bottom: 32px;
+        
+        text-decoration: none;
+    }
+    .mobile-menu__link:focus,
+    .mobile-menu__link:hover {
+        color: #2196f3;
+    }
+    
+    .mobile__contact {
+        list-style: none;
+        margin: 306px 0 64px;
+        padding: 0;
+    }
+    
+    .mobile__link-phone {
+        display: flex;
+        font-weight: 500;
+        font-size: 2.42em;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: #2196F3;
+        margin-bottom: 32px;
+    }
+    
+    .mobile__link-email {
+        font-weight: 500;
+        font-size: 1.71em;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: #757575;
+    }
+    
+    .mobile__socialMedia {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .mobile__socialMedia-link {
+        font-weight: 500;
+        font-size: 1.28em;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2196F3;
+    }
+}
+
+@include screen-768{
+    .menu-container{
+        display: none;
+    }
+}
+
+@include screen-1200 {
+    .menu-container {
+        display: none;
+    }
+}

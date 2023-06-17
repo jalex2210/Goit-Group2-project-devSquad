@@ -25,6 +25,16 @@
                 
             </div>
 
+        <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+        >
+            <svg class="header__icon-menu">
+            <use href="./images/SVG/sprite.svg#burger"></use>
+            </svg>
+        </button>
+
             <nav>
                 <ul class="nav">
                     <li>
@@ -149,6 +159,41 @@
     <footer class="container footer">
         
     </footer>
+
+    <!-- MENU MOBILE -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="header__icon-menu">
+          <use href="./images/SVG/sprite.svg#closeMobile"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="mobile-menu__link">Estudio</a></li>
+        <li><a href="portfolio.html" class="mobile-menu__link">Portafolio</a></li>
+        <li><a href="" class="mobile-menu__link">Contactos</a></li>
+      </ul>
+
+      <ul class="mobile__contact">
+        <li>
+          <a class="mobile__link-phone" href="tel:525555296000">
+            +52 55 5529 6000
+          </a>
+        </li>
+        <li>
+          <a class="mobile__link-email" href="malito:info@example.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mobile__socialMedia">
+        <li><a href="./index.html" class="mobile__socialMedia-link">Instagram</a></li>
+        <li><a href="" class="mobile__socialMedia-link">Twitter</a></li>
+        <li><a href="" class="mobile__socialMedia-link">Facebook</a></li>
+        <li><a href="" class="mobile__socialMedia-link">Linkedin</a></li>
+      </ul>
+    </div>
 
     <script
       defer
