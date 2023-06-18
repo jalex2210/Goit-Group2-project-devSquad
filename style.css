@@ -1,4 +1,8 @@
 /* feature product*/
+.container__products{
+    width: 1200px;
+    margin: 0 auto;
+}
 .products__subtitle{
 font-family: 'Titan One';
 font-style: normal;
@@ -10,6 +14,9 @@ letter-spacing: 0.04em;
 color: rgba(255, 165, 186, 1);
 padding-top: 60px;
 }
+.products__subtitle:hover{
+     letter-spacing:0.4em;
+}
 .products__title{
     font-family: 'Titan One';
     font-style: normal;
@@ -20,9 +27,10 @@ padding-top: 60px;
     letter-spacing: 0.06em;
     color: rgba(212, 20, 67, 1);
 }
-.container__products{
-    width: 1200px;
-    margin: 0 auto;
+.products__title:hover{
+     letter-spacing:0.6em;
+}
+.products__all{
     display: flex;
     align-items: center;
 }
