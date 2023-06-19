@@ -1,38 +1,38 @@
 .hero {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero__h1 {
-    display: block;
+  display: block;
 }
 
 
 
 .button {
-    padding: 5px 15px;
-    border-radius: 15px;
+  padding: 5px 15px;
+  border-radius: 15px;
 }
 
 .hero__column {
-    width: 200px;
+  width: 200px;
 }
 
 .hero__circle {
-    background-color: rgb(165, 42, 42);
-    position: absolute;
-    width: 380px;
-    height: 380px;
-    border-radius: 50%;
-    left: 55%;
-    z-index: 2;
+  background-color: rgb(165, 42, 42);
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  left: 55%;
+  z-index: 2;
 }
 
 .hero__little-circle {
-    background-color: rgba(165, 42, 42, 0.249);
-    position: absolute;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    right: 3%;
+  background-color: rgba(165, 42, 42, 0.249);
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  right: 3%;
 }
