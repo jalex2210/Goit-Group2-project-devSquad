@@ -1,8 +1,14 @@
 .made {
-  background-color: #ffffff;
+  background-color: $color-background-pink2;
+
+  &__background {
+    background-image: url(/images/leche.png);
+    background-repeat: no-repeat;
+    padding-top: 40px;
+  }
 
   &__title {
-    color: #d41443;
+    color: $color-text-red;
     font-family: Titan one;
     text-transform: uppercase;
     font-size: 30px;
@@ -16,7 +22,7 @@
     animation-direction: alternate;
   }
   &__subtitle {
-    color: #ffa5ba;
+    color: $color-text-pink;
     text-align: center;
     text-transform: uppercase;
     font-size: 58px;
@@ -34,7 +40,7 @@
     padding: 10% 15% 10% 15%;
   }
   &__texto--principal {
-    color: #000000;
+    color: $color-text-black;
     margin-bottom: 32px;
     width: 463px;
   }
@@ -43,7 +49,7 @@
     transition-duration: 500ms;
   }
   &__texto--secundario {
-    color: #907e82;
+    color: $color-text-gray;
     margin-bottom: 32px;
     width: 463px;
   }
@@ -76,10 +82,10 @@
   &__readmore {
     width: 176px;
     height: 44px;
-    background-color: #ffffff;
+    background-color: $color-white;
     border-radius: 22px;
-    color: #d41443;
-    border: 1px solid #ffb8ca;
+    color: $color-text-red;
+    border: 1px solid $color-text-pink;
   }
   &__readmore:hover {
     transform: scale(1.2);
@@ -106,12 +112,12 @@
     letter-spacing: 0.04em;
   }
   &__texto--principal {
-    color: #000000;
+    color: $color-text-black;
     margin-bottom: 40px;
     width: 334px;
   }
   &__texto--secundario {
-    color: #907e82;
+    color: $color-text-gray;
     margin-bottom: 40px;
     width: 334px;
   }
@@ -127,6 +133,9 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .made {
+  &__background {
+    background-image: none;
+  }
   &__title {
     font-size: 18px;
     line-height: 21px;
@@ -143,12 +152,12 @@
     background-image: none;
   }
   &__texto--principal {
-    color: #000000;
+    color: $color-text-black;
     margin-bottom: 40px;
     width: 220px;
   }
   &__texto--secundario {
-    color: #907e82;
+    color: $color-text-gray;
     margin-bottom: 20px;
     width: 220px;
   }
