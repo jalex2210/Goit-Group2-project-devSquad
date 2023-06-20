@@ -97,6 +97,7 @@
     flex-direction: row;
     gap: 10px;
     justify-content: center;
+    padding-top: 16px;
   }
 
   &__geoname {
@@ -106,6 +107,7 @@
     font-size: 20px;
     line-height: 37px;
     text-align: center;
+    padding-top: 16px;
   }
 
   &__reviewselector {
@@ -126,6 +128,11 @@
 
   &__testimonial:hover {
     transform: rotateX(10deg) rotateY(-10deg) rotateZ(3deg);
+
+  }
+
+  &__selection {
+    padding-top: 32px;
   }
 }
 
@@ -244,5 +251,9 @@
       left: 2px;
       top: 30px;
     }
+
+    &__selection {
+    padding-top: 16px;
+  }
   }
 }
