@@ -5,21 +5,21 @@ var selectedSlide = 0;
 
 scroll[0].onclick = function () {
   selectedSlide = 0;
-  slide.style.transform = "translateX(0px)";
+  slide.style.transform = "translateX(0%)";
   house.children[selectedSlide].querySelector("use").setAttribute("href", "./images/SVG/sprite.svg#house");
   resetIcons(selectedSlide);
 };
 
 scroll[1].onclick = function () {
   selectedSlide = 1;
-  slide.style.transform = "translateX(-1084px)";
+  slide.style.transform = "translateX(-32.18%)";
   house.children[selectedSlide].querySelector("use").setAttribute("href", "./images/SVG/sprite.svg#house");
   resetIcons(selectedSlide);
 };
 
 scroll[2].onclick = function () {
   selectedSlide = 2;
-  slide.style.transform = "translateX(-2168px)";
+  slide.style.transform = "translateX(-64.37%)";
   house.children[selectedSlide].querySelector("use").setAttribute("href", "./images/SVG/sprite.svg#house");
   resetIcons(selectedSlide);
 };

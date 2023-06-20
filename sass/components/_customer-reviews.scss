@@ -3,7 +3,7 @@
   padding-bottom: 120px;
   width: 968px;
 
-   &__container {
+  &__container {
     justify-content: center;
     overflow: hidden;
     perspective: 1500px;
@@ -37,7 +37,6 @@
     position: relative;
     text-align: center;
     width: 968px;
-    
   }
 
   &__underlinecontainer {
@@ -47,13 +46,35 @@
     left: 82px;
     top: 126px;
     width: 821px;
+    visibility: hidden;
   }
 
-&__underlinetext {
-  color: #e1e1e1;
+  &__underlinetext {
+    color: #e1e1e1;
     font-size: 34px;
     line-height: 35px;
     word-break: break-all;
+    visibility: hidden;
+  }
+
+  &__text::after {
+    justify-content: center;
+    border: 1px solid #e1e1e1;
+    content: "";
+    left: 82px;
+    top: 76px;
+    position: absolute;
+    width: 821px;
+  }
+
+  &__text::before {
+    justify-content: center;
+    border: 1px solid #e1e1e1;
+    content: "";
+    left: 82px;
+    top: 106px;
+    position: absolute;
+    width: 821px;
   }
 
   &__quotes {
@@ -85,7 +106,6 @@
     justify-content: center;
   }
 
- 
   &__button {
     cursor: pointer;
   }
@@ -94,35 +114,118 @@
     transform: rotate(0);
     position: relative;
     transition: 0.5s ease;
-    
-    
   }
 
-  &__testimonial:hover  {
-   
+  &__testimonial:hover {
     transform: rotateX(10deg) rotateY(-10deg) rotateZ(3deg);
   }
-
-  
 }
 
-@media (min-width: 767.9px) and (max-width: 1199.9px) {
-  
+@media (min-width: 768px) and (max-width: 1199.9px) {
   .costumer {
-  width: 620px;
+    &__container {
+      width: 768px;
+      justify-content: center;
+      margin: 0 auto;
+    }
 
-  &__card {
-    width: 2156px;
-  }
+    &__card {
+      width: 2156px;
+      gap: 74px;
+    }
 
-   &__text {
-    width: 620px;}
+    &__text {
+      font-size: 14px;
+      padding: 37px 64px 41px;
+      width: 620px;
+    }
 
     &__underlinecontainer {
-    left: 82px;
-    top: 126px;
-    width: 620px;
+      left: 0px;
+      text-align: center;
+      top: 115px;
+      width: 620px;
+      visibility: visible;
+    }
+
+    &__underlinetext--768 {
+      color: #e1e1e1;
+      font-size: 32px;
+      line-height: 31px;
+      position:absolute;
+      text-align: center;
+      visibility: visible;
+    }
+
+    &__underlinetext--320 {
+      visibility: collapse;
+    }
+
+    &__text::after {
+      visibility: hidden;
+    }
+
+    &__text::before {
+      visibility: hidden;
+    }
+
+    &__quotes {
+      position: absolute;
+      left: 0px;
+      top: 25px;
+    }
   }
 }
 
+@media (min-width: 320px) and (max-width: 767.9px) {
+  .costumer {
+    width: 320px;
+    &__container {
+      width: 280px;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    &__card {
+      width: 920px;
+      gap: 20px;
+      padding-left: 0px;
+      justify-content: left;
+    }
+
+    &__text {
+      font-size: 12px;
+      padding: 47px 50px;
+      width: 280px;
+    }
+
+    &__underlinecontainer {
+      left: 50px;
+      text-align: center;
+      top: 125px;
+      width: 180px;
+      visibility: visible;
+    }
+
+    &__underlinetext--320 {
+      color: #e1e1e1;
+      font-size: 30px;
+      line-height: 30px;
+      visibility: visible;
+    }
+
+    &__text::after {
+      visibility: hidden;
+    }
+
+    &__text::before {
+      visibility: hidden;
+    }
+
+    &__quotes {
+      position: absolute;
+      left: 2px;
+      top: 30px;
+    }
+  }
 }
