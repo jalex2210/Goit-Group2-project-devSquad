@@ -38,14 +38,12 @@ ul {
 
 @include screen-480 {
     .container {
-        width: 100%;
-        padding: 24px 15px;
+        width: 100%;   
     }
 }
 
 @include screen-768 {
     .container {
         width: 100%;
-        padding: 24px 15px;
     }
 }

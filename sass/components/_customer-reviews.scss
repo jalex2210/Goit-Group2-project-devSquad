@@ -57,6 +57,14 @@
     visibility: hidden;
   }
 
+  &__underlinetext--768 {
+    visibility: hidden;
+  }
+
+  &__underlinetext--320 {
+    visibility: hidden;
+  }
+
   &__text::after {
     justify-content: center;
     border: 1px solid #e1e1e1;
@@ -121,17 +129,25 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199.9px) {
+@include screen-768 {
   .costumer {
+    width: 768px;
+
+    .container {
+      padding: 0;
+    }
+
     &__container {
-      width: 768px;
-      justify-content: center;
+      width: 620px;
+      justify-content: left;
       margin: 0 auto;
     }
 
     &__card {
       width: 2156px;
       gap: 74px;
+      padding-left: 0px;
+      justify-content: left;
     }
 
     &__text {
@@ -152,13 +168,13 @@
       color: #e1e1e1;
       font-size: 32px;
       line-height: 31px;
-      position:absolute;
+      position: absolute;
       text-align: center;
       visibility: visible;
     }
 
     &__underlinetext--320 {
-      visibility: collapse;
+      visibility: hidden;
     }
 
     &__text::after {
@@ -177,7 +193,8 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 767.9px) {
+
+@include screen-480 {
   .costumer {
     width: 320px;
     &__container {
