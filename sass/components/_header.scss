@@ -14,12 +14,12 @@
         height: 12px;
     }
     &__header-hero {
-            background-color: $color-background-pink;
-            background-image: url(/images/Ellipse.png);
-                background-repeat: no-repeat;
-                background-size: 538px;
-                background-position: 63% 40%;
-        }
+        background-color: $color-background-pink;
+        background-image: url(/images/Ellipse.png);
+        background-repeat: no-repeat;
+        background-size: 538px;
+        background-position: 68% 32%;
+    }
     &__button{
         display: flex;
         gap: 15px;
@@ -78,6 +78,8 @@
     }
     .header__header-hero{
         height: 502px;
+        background-size: 346px;
+        background-position: 60px 50%;
     }
 }
 
