@@ -1,0 +1,166 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    &__h1 {
+        display: block;
+        font-family: 'Titan One';
+        font-size: 38px;
+        line-height: 44px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: $color-white;
+    }
+    &__h1-red{
+        color: $color-text-red;
+        font-size: 58px;
+        line-height: 50px;
+    }
+    
+    &__column {
+        width: 534px;
+        z-index: 10;
+    }
+    
+    &__button{
+        border-radius: 20px;
+        padding: 11px 22px;
+        font-family: 'DM Sans';
+        font-size: 14px;
+        line-height: 18px;
+        background-color: $color-white;
+        color: $color-text-red;
+        margin-top: 24px;
+    }
+    &__button:hover{
+        background-color: #ECEBEB;
+        transform: translateY(-5px);
+    }
+    &__button-red{
+        background-color: $color-text-red;
+        color: $color-white;
+    }
+    &__button-red:hover{
+        background-color: $color-button-hover;
+    }
+    
+    &__jug-text{
+        display: flex;
+        margin-top: 40px;
+    }
+    &__text{
+        margin-top: 60px;
+        width: 200px;
+        font-family: 'DM Sans';
+        font-size: 14px;
+        line-height: 140%;
+        color: $color-white;
+    }
+    &__svg{
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        width: 26px;
+        height: 26px;
+        border-radius: 25px;
+        margin-top: 20px;
+    }
+    &__icon-svg{
+        width: 10px;
+        fill: $color-text-red;
+    }
+    &__img{
+        margin-left: 45%;
+    }
+    &__circle {
+        background-color:#FFA5BA;
+        position: absolute;
+        width: 534px;
+        height: 534px;
+        border-radius: 50%;
+        left: 44%;
+        top: 54px;
+        z-index: 1;
+    }
+    
+    &__img-women{
+        position: relative;
+        margin-top: 95px;
+        z-index: 10;
+    }
+    &__numbers{
+        margin-left: 194px;
+        width: 92px;
+        margin-top: 38px;
+        text-align: right;
+        position: relative;
+    }
+    &__number{
+        font-family: 'Titan One';
+        font-size: 46px;
+        line-height: 53px;
+        letter-spacing: 0.04em;
+        color: $color-text-red;
+        position: relative;
+        z-index: 1;
+    }
+    &__sales{
+        font-family: 'DM Sans';
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: $color-white;
+        margin-top: 2px;
+    }
+
+    &__little-circle {
+        background-color: #fff;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        position: absolute;
+        top: -12px;
+        right: -20px;
+    }
+}
+
+@include screen-480{
+    .hero {
+        width: 320px;
+        display: block;
+        
+        &__h1{
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 30px;
+            position: relative;
+            z-index: 6;
+        }
+        &__circle{
+            width: 346px;
+            height: 344px;
+            left: 36px;
+            top: 83px;
+        }
+        &__button{
+            position: relative;
+            z-index: 6;
+            font-size: 8px;
+                line-height: 10px;
+        }
+        &__jug-text,
+        &__numbers,
+        &__img-women{
+            display: none;
+        }
+        &__img{
+            width: 171px;
+            height: 410px;
+            margin-left: 20%;
+            position: relative;
+            z-index: 4;
+            top: -280px;
+        }
+    }
+    
+}
