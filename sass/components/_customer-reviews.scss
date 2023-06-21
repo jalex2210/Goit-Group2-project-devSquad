@@ -1,0 +1,259 @@
+.costumer {
+  padding-top: 110px;
+  padding-bottom: 120px;
+  width: 968px;
+
+  &__container {
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1500px;
+  }
+
+  &__card {
+    display: flex;
+    padding-top: 10px;
+    gap: 115px;
+    width: 3368px;
+    justify-content: center;
+    transition: 0.5s;
+  }
+
+  &__image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    background-color: $color-background-gray;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    margin: auto;
+    padding: 51px 138px 38px;
+    position: relative;
+    text-align: center;
+    width: 968px;
+  }
+
+  &__underlinecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 82px;
+    top: 126px;
+    width: 821px;
+    visibility: hidden;
+  }
+
+  &__underlinetext {
+    color: #e1e1e1;
+    font-size: 34px;
+    line-height: 35px;
+    word-break: break-all;
+    visibility: hidden;
+  }
+
+  &__underlinetext--768 {
+    visibility: hidden;
+  }
+
+  &__underlinetext--320 {
+    visibility: hidden;
+  }
+
+  &__text::after {
+    justify-content: center;
+    border: 1px solid #e1e1e1;
+    content: "";
+    left: 82px;
+    top: 76px;
+    position: absolute;
+    width: 821px;
+  }
+
+  &__text::before {
+    justify-content: center;
+    border: 1px solid #e1e1e1;
+    content: "";
+    left: 82px;
+    top: 106px;
+    position: absolute;
+    width: 821px;
+  }
+
+  &__quotes {
+    position: absolute;
+    left: 82px;
+    top: 32px;
+  }
+
+  &__elipses {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 16px;
+  }
+
+  &__geoname {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 37px;
+    text-align: center;
+    padding-top: 16px;
+  }
+
+  &__reviewselector {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+  }
+
+  &__button {
+    cursor: pointer;
+  }
+
+  &__testimonial {
+    transform: rotate(0);
+    position: relative;
+    transition: 0.5s ease;
+  }
+
+  &__testimonial:hover {
+    transform: rotateX(10deg) rotateY(-10deg) rotateZ(3deg);
+
+  }
+
+  &__selection {
+    padding-top: 32px;
+  }
+}
+
+@include screen-768 {
+  .costumer {
+    width: 768px;
+
+    .container {
+      padding: 0;
+    }
+
+    &__container {
+      width: 620px;
+      justify-content: left;
+      margin: 0 auto;
+    }
+
+    &__card {
+      width: 2156px;
+      gap: 74px;
+      padding-left: 0px;
+      justify-content: left;
+    }
+
+    &__text {
+      font-size: 14px;
+      padding: 37px 64px 41px;
+      width: 620px;
+    }
+
+    &__underlinecontainer {
+      left: 0px;
+      text-align: center;
+      top: 115px;
+      width: 620px;
+      visibility: visible;
+    }
+
+    &__underlinetext--768 {
+      color: #e1e1e1;
+      font-size: 32px;
+      line-height: 31px;
+      position: absolute;
+      text-align: center;
+      visibility: visible;
+    }
+
+    &__underlinetext--320 {
+      visibility: hidden;
+    }
+
+    &__text::after {
+      visibility: hidden;
+    }
+
+    &__text::before {
+      visibility: hidden;
+    }
+
+    &__quotes {
+      position: absolute;
+      left: 0px;
+      top: 25px;
+    }
+  }
+}
+
+
+@include screen-480 {
+  .costumer {
+    width: 320px;
+    &__container {
+      width: 280px;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    &__card {
+      width: 920px;
+      gap: 20px;
+      padding-left: 0px;
+      justify-content: left;
+    }
+
+    &__text {
+      font-size: 12px;
+      padding: 47px 50px;
+      width: 280px;
+    }
+
+    &__underlinecontainer {
+      left: 50px;
+      text-align: center;
+      top: 125px;
+      width: 180px;
+      visibility: visible;
+    }
+
+    &__underlinetext--320 {
+      color: #e1e1e1;
+      font-size: 30px;
+      line-height: 30px;
+      visibility: visible;
+    }
+
+    &__text::after {
+      visibility: hidden;
+    }
+
+    &__text::before {
+      visibility: hidden;
+    }
+
+    &__quotes {
+      position: absolute;
+      left: 2px;
+      top: 30px;
+    }
+
+    &__selection {
+    padding-top: 16px;
+  }
+  }
+}
