@@ -14,84 +14,110 @@
 <body>
 
     <!-- HEADER -->
-    <div class="container header__hero">
-        
+    <div class="header__header-hero">
+
         <header class="header">
         
-            <div class="logo">
-                <!-- <img src="" alt=""> -->
-                <p>ICECREAM</p>
+            <div>
+                <svg class="header__logo">
+                    <use href="./images/SVG/sprite.svg#logo"></use>
+                </svg>
+                
             </div>
+
+        <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+        >
+            <svg class="header__icon-menu">
+            <use href="./images/SVG/sprite.svg#burger"></use>
+            </svg>
+        </button>
 
             <nav>
                 <ul class="nav">
-                    <li class="nav__link">Home</li>
-                    <li class="nav__link">Abaut us</li>
-                    <li class="nav__link">How it's made?</li>
-                    <li class="nav__link">Our products</li>
-                    <li class="nav__link">Contact</li>
+                    <li>
+                        <a class="nav__link" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#">Abaut us</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#made">How it's made?</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#products">Our products</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
 
-            <button class="button">
-                Buynow
-                
+            <button class="header__button">
+                <p>Buynow</p> <p>></p> 
             </button>
         
         </header>
 
-
     <!-- MAIN -->
     <main>
-
+        
         <!-- HERO -->
         <section class="container hero">
+            <div class="hero__circle"></div>
+
             <div class="hero__column">
                 
                 <h1><span class="hero__h1">ICE CREAM</span>
                     <span class="hero__h1">MADE WITH</span>
-                    <span class="hero__h1 hero__h1-ed">PASSION</span>
+                    <span class="hero__h1 hero__h1-red">PASSION</span>
                 </h1>
 
                 <div>   
-                    <button class="button"></button>
-                    <button class="button"></button>
+                    <button class="hero__button hero__button-red">Products</button>
+                    <button class="hero__button">How it’s made?</button>
                 </div>
 
-                <div class="hero__text">
-                    <img src="" alt="">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eveniet, eum id impedit mollitia quos omnis tenetur temporibus sed asperiores perspiciatis alias autem quisquam dignissimos nobis eaque optio accusantium enim.</p>
-                        <svg>
-                            <use></use>
-                        </svg>
+                <div class="hero__jug-text">
+                    <img src="./images/jarra.png" alt="">
+                    <div class="hero__text">
+                        <p>Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!</p>
+                        <div class="hero__svg">
+                            <svg class="hero__icon-svg">
+                                <use href="./images/SVG/sprite.svg#right"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
               
             <div class="hero__column">
-            <img class="hero__img" src="" alt="">
+                <img class="hero__img" src="./images/helado.png" alt="">
             </div>
 
-            <div class="hero__column">
-                <div class="hero__number">
-                    <p>16</p>
-                    <span class="hero__little-circle"></span>
-                    <p>dsfsdfs</p>
+            <div class="hero__little-column">
+                <div class="hero__numbers">
+                    <p class="hero__number">16</p>
+                    <p class="hero__sales">cafes</p>
+                    <div class="hero__little-circle"></div>
                 </div>
-                <div class="hero__number">
-                    <p>23</p>
-                    <span class="hero__little-circle"></span>
-                    <p>dsfsdfs</p>
+                <div class="hero__numbers">
+                    <p class="hero__number">23</p>
+                    <p class="hero__sales">food trucks</p>
+                    <div class="hero__little-circle"></div>
                 </div>
-                <img src="" alt="">
+                <div>
+                <img class="hero__img-women" src="./images/chica.png" alt="chica">
+                </div>
             </div>
+        </section>
 
-            <div class="hero__circle"></div>
     </div>         
         
         <!-- PRODUCTS -->
-        </section class="container products">
+        <section class="container products">
             <div class="products__column">
             </div>
 
@@ -100,7 +126,7 @@
 
             <div class="products__column">
             </div>
-
+        </section>
 
         <!-- HOW IT'S MADE -->
         <section class="container made">
@@ -254,6 +280,27 @@
     <footer class="container footer">
         
     </footer>
+
+    <!-- MENU MOBILE -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="header__icon-menu">
+          <use href="./images/SVG/sprite.svg#closeMobile"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <button class="header__button">
+            <p>Buynow</p> <p>></p> 
+        </button>
+
+        <li><a href="./index.html" class="mobile-menu__link">Home</a></li>
+        <li><a href="#" class="mobile-menu__link">Abaut us</a></li>
+        <li><a href="" class="mobile-menu__link">How it's made?</a></li>
+        <li><a href="" class="mobile-menu__link">Our products</a></li>
+        <li><a href="" class="mobile-menu__link">Contact</a></li>
+      </ul>
+    </div>
 
     <script
       defer
