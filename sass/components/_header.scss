@@ -1,11 +1,97 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
-
-    &__hero {
-            background-color: rgb(228, 144, 144);
+    margin: 0 auto;
+    padding: 37px 16px;
+    width: 1200px;
+    z-index: 3;
+    &__logo{
+        width: 199px;
+        height: 50px;
+    }
+    &__icon-menu {
+        width: 20px;
+        height: 12px;
+    }
+    &__header-hero {
+            background-color: $color-background-pink;
         }
-
+    &__button{
+        display: flex;
+        gap: 15px;
+        padding: 3px 37px;
+        height: 44px;
+        border-radius: 25px;
+        color: $color-text-red;
+        align-items: center;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        line-height: 21px;
+        position: relative;
+        z-index: 5;
+    }
+    &__button:hover{
+        background-color: #ECEBEB;
+        transform: translateY(-5px);
+    }
+    .nav {
+        display: flex;
+        gap: 20px;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        line-height: 21px;
+        padding-top: 15px;
+    }
+    .nav__link{
+        color: $color-white;
+        position: relative;
+        z-index: 4;
+    }
+    .nav__link:hover{
+        color: $color-text-red;
+    }
     
 }
+.header-container{
+    width: 1280px;
+}
+
+@include screen-1200 {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@include screen-768{
+    .nav{
+        display: none;
+    }
+}
+
+@include screen-480{
+    .header__logo{
+        margin-bottom: 30px;
+    }
+    .header__header-hero{
+        height: 502px;
+    }
+}
+
+/*#header__bg-circles1 {
+    background-color: rgba(42, 165, 46, 0.827);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    z-index: 1;
+    transform: translateX(200px) translateY(400px);
+
+    animation: move-circle1 2s infinite linear;
+
+}
+
+@keyframes move-circle1 {
+    to {
+        transform: translateX(250px) translateY(-30px);
+    }
+
+}*/
