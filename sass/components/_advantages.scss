@@ -45,7 +45,20 @@
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .advantages {
+    &__text {
+      font-size: 14px;
+      line-height: 174%;
+    }
+    &__tittle {
+      font-size: 48px;
+      line-height: 55px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
   .advantajes {
     flex-wrap: wrap;
 
@@ -55,6 +68,12 @@
     }
     &__tittle {
       margin-top: 16px;
+      font-size: 36px;
+      line-height: 41px;
+    }
+    &__text{
+      font-size: 12px;
+      line-height: 170%;
     }
   }
 }
