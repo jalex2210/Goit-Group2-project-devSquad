@@ -68,6 +68,15 @@
     }
 }
 
+@include screen-480{
+    .header__logo{
+        margin-bottom: 30px;
+    }
+    .header__header-hero{
+        height: 502px;
+    }
+}
+
 /*#header__bg-circles1 {
     background-color: rgba(42, 165, 46, 0.827);
     width: 58px;
