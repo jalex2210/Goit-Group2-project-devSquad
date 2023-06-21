@@ -1,0 +1,31 @@
+.gallery {
+    width: 1000px;
+    height: 430px;
+    align-items: center;
+    margin:0 auto ;
+    display: flex;
+     /*para que se vea  un poco centrado despues toca quitarlo cuando se agregue lo demas*/
+    justify-content: center;
+    
+    &__column {
+    margin-bottom: 8px;
+    margin-right: 4px;
+    margin-right: 4px;
+    }
+
+    &__image--1, &__image--2, &__image--3,&__image--,&__image--5, &__image--5, 
+    &__image--6, &__image--7, &__image--8, &__image--9, &__image--10 {
+    width: 150px;
+    height: 138px;
+    border-radius: 20px;
+    transform-origin: left top;
+    }
+
+
+/* Efecto de lupa */
+    &__image:hover {
+    transform: scale(1.2); /* Ajusta el valor según el nivel de acercamiento deseado */
+    z-index: 1;
+    transition: transform 0.3s ease;
+    }
+}
