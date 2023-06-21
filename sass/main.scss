@@ -4,7 +4,7 @@
 @import "./utils/variables";
 @import "./utils/mixin";
 @import "./components/advantages","./components/contacts","./components/customer-reviews","./components/header","./components/hero";
-@import "./components/footer","./components/gallery","./components/how-its-made","./components/products";
+@import "./components/footer","./components/gallery","./components/how-its-made","./components/products","./components/headerMobile";
 
 
 * {
@@ -34,18 +34,18 @@ a {
 ul {
     list-style: none;
 }
-
+button {
+    border: none;
+}
 
 @include screen-480 {
     .container {
-        width: 100%;
-        padding: 24px 15px;
+        width: 100%;   
     }
 }
 
 @include screen-768 {
     .container {
         width: 100%;
-        padding: 24px 15px;
     }
 }
