@@ -1,10 +1,11 @@
 @include screen-480{
     .container{
-        min-width: 320px;
+        width: 320px;
     }
     .header{
-        min-width: 320px;
+        width: 320px;
     }
+    
     nav{
         display: none;
     }
@@ -12,10 +13,6 @@
         display: none;
     }
 
-    .header__icon-menu {
-        width: 24px;
-        height: 24px;
-    }
 
     .menu-toggle {
         background-color: transparent;
@@ -24,11 +21,6 @@
         border-radius: 50%;
     }
 
-    .menu-toggle:hover,
-    .menu-toggle:focus {
-        background-color: $color-button-hover;
-    }
-    
     .menu-container {
         position: fixed;
         top: 0;
@@ -36,7 +28,7 @@
         width: 100vw;
         height: 100vh;
         padding: 40px;
-        background-color: #E17992;
+        background-color: $color-background-pink;
         z-index: 999;
         overflow-y: auto;
         transform: translateX(100%);
@@ -51,7 +43,6 @@
         position: absolute;
         top: 21px;
         right: 25px;
-        fill: orange;
     }
     
     .mobile-menu {
@@ -79,6 +70,7 @@
 @include screen-768{
     .header{
         width: 100vw;
+        
     }
     .menu-container{
         transform: translateX(30%);
@@ -88,9 +80,10 @@
         cursor: pointer;
         border: none;
         border-radius: 50%;
-        left: 290px;
+        right: -250px;
         position: relative;
         z-index: 15;
+        
     }
     nav{
         display: none;
@@ -122,19 +115,18 @@
     
     .mobile-menu {
         padding: 0;
-        margin-top: 8px;
+        margin-top: 0;
         list-style: none;
     }
     
     .mobile-menu__link {
-        font-weight: 500;
-        font-size: 2.85em;
-        line-height: 1.175;
-        letter-spacing: 0.02em;
-        display: block;
-        margin-bottom: 32px;
-    
-        text-decoration: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+
+        color: #D41443;
     }
     
     .mobile-menu__link:focus,
