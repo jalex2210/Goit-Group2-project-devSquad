@@ -12,6 +12,7 @@
     &__icon-menu {
         width: 20px;
         height: 12px;
+        
     }
     &__header-hero {
         background-color: $color-background-pink;
@@ -73,8 +74,9 @@
     .header__header-hero {
         height: 416px;
         background-size: 335px;
-        background-position: 245px 50%;
+        background-position: 55% 50%;
     }
+    
 }
 
 @include screen-480{
@@ -85,6 +87,9 @@
         height: 502px;
         background-size: 346px;
         background-position: 60px 50%;
+    }
+    .header__icon-menu{
+        top: 10px;
     }
 }
 

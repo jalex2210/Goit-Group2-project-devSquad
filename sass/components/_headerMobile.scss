@@ -1,9 +1,9 @@
 @include screen-480{
     .container{
-        width: 320px;
+        width: 100%;
     }
     .header{
-        width: 320px;
+        width: 100%;
         margin-bottom: 46px;
         padding-top: 14px;
     }
@@ -37,18 +37,19 @@
         background-color: transparent;
         cursor: pointer;
         border: none;
+        margin-top: 15px;
     }
 
     .menu-container {
         position: fixed;
         top: 0;
         right: 0;
-        height: 100vh;
+        height: 100%;
         padding: 0 40px;
         background-color: #E17992;
         z-index: 999;
         overflow-y: auto;
-        transform: translateX(90%);
+        transform: translateX(254px);
         transition: transform 250ms ease-in-out;
     }
     
@@ -108,7 +109,16 @@
         line-height: 21px;
         }
     .menu-container{
-        transform: translateX(30%);
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 0 40px;
+        background-color: #E17992;
+        z-index: 999;
+        overflow-y: auto;
+        transform: translateX(254px);
+        transition: transform 250ms ease-in-out;
     }
     .menu-toggle {
         background-color: transparent;
@@ -128,7 +138,7 @@
         top: 0;
         right: 0;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         padding: 40px;
         background-color: #E17992;
         z-index: 999;
