@@ -29,3 +29,28 @@
     transition: transform 0.3s ease;
     }
 }
+
+@include screen-480{
+    .gallery {
+            width: 100%;
+            height: 100%;
+    }
+    .gallery__image--1,
+    .gallery__image--2,
+    .gallery__image--3,
+    .gallery__image--5,
+    .gallery__image--5,
+    .gallery__image--6,
+    .gallery__image--7,
+    .gallery__image--8,
+    .gallery__image--9,
+    .gallery__image--10 {
+        width: 43.59px;
+        height: 43.86px;
+        border-radius: 8px;
+    }
+    .gallery__image--4{
+        width: 89.4px;
+        height: 89.61px;
+    }
+}

@@ -15,6 +15,10 @@
     }
     &__header-hero {
             background-color: $color-background-pink;
+            background-image: url(/images/Ellipse.png);
+                background-repeat: no-repeat;
+                background-size: 538px;
+                background-position: 63% 40%;
         }
     &__button{
         display: flex;
