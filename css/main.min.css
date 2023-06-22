@@ -1,1 +1,157 @@
-@import"https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap";@import"https://fonts.googleapis.com/css2?family=Titan+One&display=swap";@import"node_modules/modern-normalize/modern-normalize.css";.header{display:flex;justify-content:space-between;padding:20px 0}.header__hero{background-color:#e49090}.header .nav{display:flex;gap:20px}.hero{display:flex;justify-content:space-between}.hero__h1{display:block}.button{padding:5px 15px;border-radius:15px}.hero__column{width:200px}.hero__circle{background-color:brown;position:absolute;width:380px;height:380px;border-radius:50%;left:55%;z-index:2}.hero__little-circle{background-color:rgba(165,42,42,.249);position:absolute;width:38px;height:38px;border-radius:50%;right:3%}*{box-sizing:border-box;margin:0;padding:0}body{color:#000;background-color:#e5e5e5;font-family:"DM-Sans",sans-serif;font-size:16px;font-weight:500;letter-spacing:.04em}.container{width:1200px;margin:0 auto}a{text-decoration:none}ul{list-style:none}@media screen and (max-width: 767px){.container{width:100%;padding:24px 15px}}@media screen and (min-width: 768px)and (max-width: 1200px){.container{width:100%;padding:24px 15px}}/*# sourceMappingURL=main.min.css.map */
+@import "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Titan+One&display=swap";
+@import "node_modules/modern-normalize/modern-normalize.css";
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header__hero {
+  background-color: #FFF5F6;
+}
+.header .nav {
+  display: flex;
+  gap: 20px;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__h1 {
+  display: block;
+}
+.button {
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+.hero__column {
+  width: 200px;
+}
+.hero__circle {
+  background-color: brown;
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  left: 55%;
+  z-index: 2;
+}
+.hero__little-circle {
+  background-color: rgba(165, 42, 42, 0.249);
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  right: 3%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #000;
+  background-color: #e5e5e5;
+  font-family: "DM-Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 24px 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 24px 15px;
+  }
+} /*# sourceMappingURL=main.min.css.map */
+
+.contact__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.contact__item {
+  width: 368px;
+height: 538px;
+
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px;
+}
+
+.contact__item:hover {
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.contact__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background: #F0D1A5;
+  border-radius: 6px;
+  margin-bottom: 32px;
+  width: 75.1px;
+height: 28px;
+}
+
+.contact__title--two {
+  background: #C2E297;
+  width: 138px;
+  height: 28px;
+}
+
+.contact__subtitle {
+  margin-bottom: 12px;
+  color: #000000;
+}
+
+.contact__description {
+  margin-top: 8px;
+  padding-bottom: 32px;
+  color: #907E82;
+  width: 288px;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.contact__hour {
+color: #FFA5BA;
+margin-bottom: 42px;
+}
+
+
+.contact__phone-email {
+  line-height: 183%;
+  margin-top: 32px;
+  padding-top: 32px;
+  color: #907E82;
+  width: 288px;
+  border-top: 1px solid #E1E1E1;
+}
+
+
+.contact__opening-hours {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 32px; 
+ 
+}
