@@ -1,0 +1,198 @@
+.made {
+    background-color: $color-background-pink2;
+
+    &__background {
+        background-image: url(/images/leche.png);
+        background-repeat: no-repeat;
+        padding-top: 40px;
+    }
+
+    &__title {
+        color: $color-text-red;
+        font-family: Titan one;
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 34px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    &__title:hover {
+        animation: rotacion 4s;
+        animation-direction: alternate;
+    }
+
+    &__subtitle {
+        color: $color-text-pink;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 58px;
+        font-family: Titan one;
+        line-height: 66px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    &__subtitle:hover {
+        animation: rotacion 4s;
+        animation-direction: alternate;
+    }
+
+    &__texto {
+        padding: 10% 15% 10% 15%;
+    }
+
+    &__texto--principal {
+        color: $color-text-black;
+        margin-bottom: 32px;
+        width: 463px;
+    }
+
+    &__texto--principal:hover {
+        transform: scale(1.15);
+        transition-duration: 500ms;
+    }
+
+    &__texto--secundario {
+        color: $color-text-gray;
+        margin-bottom: 32px;
+        width: 463px;
+    }
+
+    &__texto--secundario:hover {
+        transform: scale(1.15);
+        transition-duration: 500ms;
+    }
+
+    &__list {
+        display: flex;
+        background-image: url("/images/about/background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__list___list--imagen {
+        padding: 0% 5% 0% 5%;
+    }
+
+    &__box {
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 501px;
+        transition-property: transform;
+        transition-duration: 2000ms;
+        transition-timing-function: linear;
+        transition-delay: 0;
+    }
+
+    &__image:hover {
+        transform: rotate(90deg);
+    }
+
+    &__readmore {
+        width: 176px;
+        height: 44px;
+        background-color: $color-white;
+        border-radius: 22px;
+        color: $color-text-red;
+        border: 1px solid $color-text-pink;
+    }
+
+    &__readmore:hover {
+        transform: scale(1.2);
+        transition-duration: 500ms;
+        cursor: pointer;
+    }
+}
+
+@keyframes rotacion {
+    0% {
+        letter-spacing: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .made {
+        &__title {
+            font-size: 26px;
+            line-height: 30px;
+            letter-spacing: 0em;
+        }
+
+        &__subtitle {
+            font-size: 48px;
+            line-height: 55px;
+            letter-spacing: 0.04em;
+        }
+
+        &__texto--principal {
+            color: $color-text-black;
+            margin-bottom: 40px;
+            width: 334px;
+        }
+
+        &__texto--secundario {
+            color: $color-text-gray;
+            margin-bottom: 40px;
+            width: 334px;
+        }
+
+        &__list {
+            background-image: none;
+        }
+
+        &__list--imagen {
+            padding: 0% 1% 0% 1%;
+        }
+
+        &__image {
+            width: 336px;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .made {
+        &__background {
+            background-image: none;
+        }
+
+        &__title {
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0em;
+        }
+
+        &__subtitle {
+            font-size: 34px;
+            line-height: 39px;
+            letter-spacing: 0.04em;
+            margin-bottom: 32px;
+        }
+
+        &__list {
+            flex-direction: column;
+            background-image: none;
+        }
+
+        &__texto--principal {
+            color: $color-text-black;
+            margin-bottom: 40px;
+            width: 220px;
+        }
+
+        &__texto--secundario {
+            color: $color-text-gray;
+            margin-bottom: 20px;
+            width: 220px;
+        }
+
+        &__image {
+            width: 280px;
+        }
+    }
+}
