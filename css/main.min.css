@@ -155,3 +155,27 @@ margin-bottom: 42px;
   margin-top: 32px; 
  
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__button {
+  width: 198px;
+height: 44px;
+left: 411px;
+top: 4475px;
+border-color: #D41342;
+background: #D41342;
+border-radius: 22px;
+color: #ffffff;
+border-width: 0;
+margin-right: 12px;
+}
+
+.contact__button--white {
+  background: #FFFFFF;
+  color: #D41342;
+  border-color: #FFFFFF;
+}
